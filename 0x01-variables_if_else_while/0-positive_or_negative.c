@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
-/* Description: main serves as the starting point for program execution */
+/* main- serves as the starting point for program execution */
+/* Description:Positive anything is better than negative nothing */
+/* Returns: 0 if successful */
+
 int main(void)
 {
 	int n;
