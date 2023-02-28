@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code for
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
@@ -17,3 +17,4 @@ int main(void)
 	print_array(array, 5);
 	return (0);
 }
+
