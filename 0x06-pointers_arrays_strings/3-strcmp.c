@@ -1,49 +1,17 @@
 #include "main.h"
-
 /**
-
- * _strcmp - compare string values
-
- * @s1: input value
-
- * @s2: input value
-
+ * _strcmp - checks if 2 strings are of equal value
+ * @s1: destination string
+ * @s2: source string to be copied
  *
-
- * Return: s1[i] - s2[i]
-
+ * Return: difference of first characters that are of diff value
  */
-
 int _strcmp(char *s1, char *s2)
-
 {
+	int j;
 
-        int i;
-
-
-        i = 0;
-
-        while (s1[i] != '\0' && s2[i] != '\0')
-
-        {
-
-                if (s1[i] != s2[i])
-
-                {
-
-                        return (s1[i] - s2[i]);
-
-                }
-
-                i++;
-
-        }
-
-        return (0);
-
+	for (j = 0; s1[j] != '\0' && s2[j] != '\0'; j++)
+		if (s1[j] != s2[j])
+			return (s1[j] - s2[j]);
+	return (0);
 }
-
-
-
-
-
