@@ -10,3 +10,10 @@ OUTPUT_FILE="liball.so"
 
 # Compile and link
 $CC $CFLAGS -o $OUTPUT_FILE $SOURCE_FILES
+
+# Check if compilation was successful
+if [ $? -eq 0 ]; then
+    echo "Dynamic library created successfully: $OUTPUT_FILE"
+else
+    echo "Error: Compilation failed."
+fi
