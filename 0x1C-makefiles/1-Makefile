@@ -1,0 +1,17 @@
+#phony targets
+.PHONY: all school
+
+#variables
+CC = gcc
+
+#Target executable
+TARGET = school
+
+#source files
+SRC = main.c school.c
+
+#Default rule
+all: school
+
+school:
+	$(CC) $(SRC) -o school
