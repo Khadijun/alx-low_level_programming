@@ -7,19 +7,12 @@
   */
 int _islower(int c)
 {
-	int ch;
-
-	for (ch = 'a'; ch <= 'z'; ch++)
+	if (islower(c))
 	{
-		int c = 'a';
-
-		while (c != 'A' && c != 'Z')
-		{
-			if (_islower(c))
-				return (1);
-		}
-		_putchar(ch + '0');
-		_putchar('\n');
+		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
