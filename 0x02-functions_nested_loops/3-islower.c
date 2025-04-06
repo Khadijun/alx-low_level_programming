@@ -1,5 +1,5 @@
 #include "main.h"
-#include <ctype.h>
+
 /**
   * _islower - prints the alphabets in lowercase
   * @c: the parameter the function takes
@@ -7,7 +7,7 @@
   */
 int _islower(int c)
 {
-	if (islower(c))
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
